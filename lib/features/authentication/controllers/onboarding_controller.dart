@@ -21,7 +21,7 @@ class OnboaringController extends GetxController {
       // Go.to(LoginPage());
     } else {
       currentPageIndex.value = currentPageIndex.value + 1;
-      pageController.jumpTo(currentPageIndex.value as double);
+      pageController.jumpToPage(currentPageIndex.value);
     }
   }
 

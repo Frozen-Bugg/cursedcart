@@ -2,6 +2,7 @@ import 'package:cursedcart/features/authentication/controllers/onboarding_contro
 import 'package:cursedcart/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import '../../../utils/device/device_utility.dart';
 
@@ -18,17 +19,17 @@ class OnboardingScreen extends StatelessWidget {
           onPageChanged: controller.updatePageIndicator,
           children: [
             OnboardingPage(
-              image: "assets/images/onboarding_screen/click.gif",
+              image: "assets/images/onboarding_screen/bat.png",
               title: "Welcome to CURSED CART",
               subtitle: "Choose your curse products",
             ),
             OnboardingPage(
-              image: "assets/images/onboarding_screen/money-bag.gif",
+              image: "assets/images/onboarding_screen/pumpkin.png",
               title: "Pay with cursed energy",
               subtitle: "Easily pay using any method",
             ),
             OnboardingPage(
-              image: "assets/images/onboarding_screen/shopping-cart.gif",
+              image: "assets/images/onboarding_screen/pumpkins.png",
               title: "Delivered at your doorstep",
               subtitle: "Get it right at your doorstep in a matter of time",
             ),
@@ -54,7 +55,7 @@ class OnboardingNext extends StatelessWidget {
       right: 24,
       child: ElevatedButton(
         onPressed: () => OnboaringController.instance.nextPage(),
-        child: Icon(Icons.skip_next),
+        child: Icon(Icons.arrow_forward),
         style: ElevatedButton.styleFrom(shape: const CircleBorder()),
       ),
     );
