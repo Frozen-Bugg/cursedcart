@@ -1,3 +1,4 @@
+import 'package:cursedcart/features/authentication/screens/login.dart';
 import 'package:cursedcart/features/authentication/screens/onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -12,7 +13,7 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: CursedTheme.lightTheme,
       darkTheme: CursedTheme.darkTheme,
-      home: const OnboardingScreen(),
+      home: const LoginScreen(),
     );
   }
 }

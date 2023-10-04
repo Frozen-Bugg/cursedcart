@@ -12,7 +12,7 @@ class OnboaringController extends GetxController {
   //dot navigation
   void dotNavigationClick(index) {
     currentPageIndex.value = index;
-    pageController.jumpTo(index);
+    pageController.jumpToPage(index);
   }
 
   //update index and jump to next page

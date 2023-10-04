@@ -30,7 +30,7 @@ class CursedTheme {
   static ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
     primaryColor: Colors.blue,
-    scaffoldBackgroundColor: Colors.black,
+    scaffoldBackgroundColor: Color(0x2a2b2a),
     textTheme: CursedTextTheme.darkTextTheme,
     elevatedButtonTheme: CursedElevatedButtonTheme.darkTheme,
     appBarTheme: CursedAppbarTheme.darkAppbarTheme,
