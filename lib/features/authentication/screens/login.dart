@@ -10,7 +10,6 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = CursedHelper.isDarkMode(context);
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
@@ -41,11 +40,11 @@ class LoginIntro extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Image(
+        const Image(
           image: AssetImage("assets/images/login_screen/mermaid.png"),
           height: 150,
         ),
-        SizedBox(height: 16),
+        const SizedBox(height: 16),
         Text('Welcome Back!',
             style: Theme.of(context).textTheme.headlineMedium),
         Text('to cursed cart', style: Theme.of(context).textTheme.bodyMedium)
@@ -67,17 +66,17 @@ class LoginForm extends StatelessWidget {
       child: Column(
         children: [
           TextFormField(
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
                 prefixIcon: Icon(Iconsax.direct_right), labelText: "Email"),
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           TextFormField(
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
                 prefixIcon: Icon(Iconsax.password_check),
                 labelText: "Password",
                 suffixIcon: Icon(Iconsax.eye_slash)),
           ),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -85,21 +84,22 @@ class LoginForm extends StatelessWidget {
               Row(
                 children: [
                   Checkbox(value: true, onChanged: (value) {}),
-                  Text("Remember me"),
+                  const Text("Remember me"),
                 ],
               ),
               //forget password
-              TextButton(onPressed: () {}, child: Text("Forget Password"))
+              TextButton(onPressed: () {}, child: const Text("Forget Password"))
             ],
           ),
           SizedBox(
               width: double.infinity,
-              child: ElevatedButton(onPressed: () {}, child: Text("Login"))),
-          SizedBox(height: 16),
+              child:
+                  ElevatedButton(onPressed: () {}, child: const Text("Login"))),
+          const SizedBox(height: 16),
           SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                  onPressed: () {}, child: Text("Create Account")))
+                  onPressed: () {}, child: const Text("Create Account")))
         ],
       ),
     ));
@@ -124,12 +124,12 @@ class SocialButtons extends StatelessWidget {
             onPressed: () {},
             icon: const Image(
               image: AssetImage("assets/images/login_screen/google.png"),
-              width: 100,
-              height: 100,
+              width: 30,
+              height: 30,
             ),
           ),
         ),
-        SizedBox(width: 16),
+        const SizedBox(width: 16),
         Container(
           decoration: BoxDecoration(
               border: Border.all(color: Colors.grey),
@@ -138,8 +138,8 @@ class SocialButtons extends StatelessWidget {
             onPressed: () {},
             icon: const Image(
               image: AssetImage("assets/images/login_screen/facebook.png"),
-              width: 100,
-              height: 100,
+              width: 30,
+              height: 30,
             ),
           ),
         ),

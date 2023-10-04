@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
+import '../screens/login.dart';
 
 class OnboaringController extends GetxController {
   static OnboaringController get instance => Get.find();
@@ -18,7 +19,7 @@ class OnboaringController extends GetxController {
   //update index and jump to next page
   void nextPage() {
     if (currentPageIndex.value == 2) {
-      // Go.to(LoginPage());
+      Get.offAll(const LoginScreen());
     } else {
       currentPageIndex.value = currentPageIndex.value + 1;
       pageController.jumpToPage(currentPageIndex.value);
@@ -27,7 +28,6 @@ class OnboaringController extends GetxController {
 
   //skip all pages
   void skipPage() {
-    currentPageIndex.value = 2;
-    pageController.jumpToPage(2);
+    Get.offAll(const LoginScreen());
   }
 }
