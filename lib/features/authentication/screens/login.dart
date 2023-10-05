@@ -1,9 +1,12 @@
 import 'package:cursedcart/common/style/spacing_style.dart';
 import 'package:cursedcart/common/widget/divider_line.dart';
+import 'package:cursedcart/features/authentication/screens/signup.dart';
 import 'package:cursedcart/utils/device/device_utility.dart';
 import 'package:cursedcart/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import '../../../common/widget/social_buttons.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -99,51 +102,10 @@ class LoginForm extends StatelessWidget {
           SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                  onPressed: () {}, child: const Text("Create Account")))
+                  onPressed: () => Get.to(() => const SignupScreen()),
+                  child: const Text("Create Account")))
         ],
       ),
     ));
-  }
-}
-
-class SocialButtons extends StatelessWidget {
-  const SocialButtons({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Container(
-          decoration: BoxDecoration(
-              border: Border.all(color: Colors.grey),
-              borderRadius: BorderRadius.circular(100)),
-          child: IconButton(
-            onPressed: () {},
-            icon: const Image(
-              image: AssetImage("assets/images/login_screen/google.png"),
-              width: 30,
-              height: 30,
-            ),
-          ),
-        ),
-        const SizedBox(width: 16),
-        Container(
-          decoration: BoxDecoration(
-              border: Border.all(color: Colors.grey),
-              borderRadius: BorderRadius.circular(100)),
-          child: IconButton(
-            onPressed: () {},
-            icon: const Image(
-              image: AssetImage("assets/images/login_screen/facebook.png"),
-              width: 30,
-              height: 30,
-            ),
-          ),
-        ),
-      ],
-    );
   }
 }

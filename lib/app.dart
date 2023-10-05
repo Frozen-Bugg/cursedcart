@@ -1,5 +1,6 @@
 import 'package:cursedcart/features/authentication/screens/login.dart';
 import 'package:cursedcart/features/authentication/screens/onboarding.dart';
+import 'package:cursedcart/features/authentication/screens/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'utils/theme/theme.dart';
