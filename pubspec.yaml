@@ -71,6 +71,7 @@ flutter:
     - assets/images/
     - assets/images/onboarding_screen/
     - assets/images/login_screen/
+    - assets/images/signup_screen/
     - assets/icons/brands/
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -1,6 +1,6 @@
 import 'package:cursedcart/common/style/spacing_style.dart';
 import 'package:cursedcart/common/widget/divider_line.dart';
-import 'package:cursedcart/features/authentication/screens/signup.dart';
+import 'package:cursedcart/features/authentication/screens/signup/signup.dart';
 import 'package:cursedcart/utils/device/device_utility.dart';
 import 'package:cursedcart/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';

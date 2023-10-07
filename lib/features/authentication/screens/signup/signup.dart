@@ -1,7 +1,9 @@
 import 'package:cursedcart/common/widget/divider_line.dart';
 import 'package:cursedcart/common/widget/social_buttons.dart';
+import 'package:cursedcart/features/authentication/screens/signup/verify_email.dart';
 import 'package:cursedcart/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SignupScreen extends StatelessWidget {
@@ -105,6 +107,13 @@ class SignupScreen extends StatelessWidget {
                   ])),
                 )
               ],
+            ),
+            const SizedBox(height: 24),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                  onPressed: () => Get.to(const VerifyEmailScreen()),
+                  child: const Text("Create Account")),
             ),
             const SizedBox(height: 24),
             const CursedDivider(label: "or sign up with"),
