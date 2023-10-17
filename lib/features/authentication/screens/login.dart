@@ -1,5 +1,6 @@
 import 'package:cursedcart/common/style/spacing_style.dart';
 import 'package:cursedcart/common/widget/divider_line.dart';
+import 'package:cursedcart/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:cursedcart/features/authentication/screens/signup/signup.dart';
 import 'package:cursedcart/utils/device/device_utility.dart';
 import 'package:cursedcart/utils/helpers/helper_function.dart';
@@ -91,7 +92,9 @@ class LoginForm extends StatelessWidget {
                 ],
               ),
               //forget password
-              TextButton(onPressed: () {}, child: const Text("Forget Password"))
+              TextButton(
+                  onPressed: () => Get.to(() => const ForgetPasswordScreen()),
+                  child: const Text("Forget Password"))
             ],
           ),
           SizedBox(
