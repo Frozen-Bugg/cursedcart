@@ -44,4 +44,8 @@ class CursedeviceUtils {
   static double getStatusbarHeight() {
     return MediaQuery.of(Get.context!).padding.top;
   }
+
+  static double getAppBarHeight() {
+    return MediaQuery.of(Get.context!).size.height;
+  }
 }
