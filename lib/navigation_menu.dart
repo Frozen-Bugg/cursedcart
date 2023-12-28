@@ -1,5 +1,5 @@
 import 'package:cursedcart/features/authentication/screens/login.dart';
-import 'package:cursedcart/features/shop/screens/home.dart';
+import 'package:cursedcart/features/shop/screens/home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -32,7 +32,7 @@ class NavigationMenuController extends GetxController {
   static NavigationMenuController get instance => Get.find();
   final Rx<int> selectedIndex = 0.obs;
   final screen = [
-    const HomeScreen(),
+    HomeScreen(),
     Container(color: Colors.blue),
     Container(color: Colors.green),
     Container(color: Colors.red)
