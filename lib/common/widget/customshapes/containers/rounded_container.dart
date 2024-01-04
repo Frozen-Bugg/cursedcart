@@ -1,30 +1,24 @@
 import 'package:flutter/material.dart';
 
-class CursedRoundedImage extends StatelessWidget {
-  const CursedRoundedImage({
+class CursedRoundedContainer extends StatelessWidget {
+  const CursedRoundedContainer({
     super.key,
     this.width,
     this.height,
-    required this.imageUrl,
-    this.applyImageRadius = true,
     this.border,
     this.backgroundColor = Colors.transparent,
-    this.fit = BoxFit.contain,
     this.padding,
-    this.isImageNetwork = false,
     this.onPressed,
     this.borderRadius = 16,
+    required this.child,
   });
   final double? width, height;
-  final String imageUrl;
-  final bool applyImageRadius;
   final BoxBorder? border;
   final Color backgroundColor;
-  final BoxFit? fit;
   final EdgeInsetsGeometry? padding;
-  final bool isImageNetwork;
   final VoidCallback? onPressed;
   final double borderRadius;
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
@@ -37,17 +31,7 @@ class CursedRoundedImage extends StatelessWidget {
             border: border,
             color: backgroundColor,
             borderRadius: BorderRadius.circular(borderRadius)),
-        child: ClipRRect(
-            borderRadius: applyImageRadius
-                ? BorderRadius.circular(borderRadius)
-                : BorderRadius.zero,
-            child: Image(
-              image: isImageNetwork
-                  ? NetworkImage(imageUrl)
-                  : const AssetImage('assets/images/impact.png')
-                      as ImageProvider,
-              fit: fit,
-            )),
+        child: child,
       ),
     );
   }

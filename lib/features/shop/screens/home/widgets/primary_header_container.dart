@@ -15,18 +15,15 @@ class CursedPrimaryHeaderContainer extends StatelessWidget {
     return CustomEdgeWidget(
       child: Container(
         color: CursedColor.primary,
-        padding: EdgeInsets.all(0),
-        child: SizedBox(
-          height: 400,
-          child: Stack(
-            children: [
-              Positioned(
-                  top: -150, right: -250, child: CursedCircularContainer()),
-              Positioned(
-                  top: 100, right: -300, child: CursedCircularContainer()),
-              child,
-            ],
-          ),
+        padding: const EdgeInsets.all(0),
+        child: Stack(
+          children: [
+            const Positioned(
+                top: -150, right: -250, child: CursedCircularContainer()),
+            const Positioned(
+                top: 100, right: -300, child: CursedCircularContainer()),
+            child,
+          ],
         ),
       ),
     );

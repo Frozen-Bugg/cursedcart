@@ -1,3 +1,4 @@
+import 'package:cursedcart/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class CursedChipTheme {
@@ -7,8 +8,8 @@ class CursedChipTheme {
   static ChipThemeData lightTheme = ChipThemeData(
     disabledColor: Colors.grey.withOpacity(0.4),
     labelStyle: const TextStyle(color: Colors.black),
-    selectedColor: Colors.blue,
-    padding: EdgeInsets.all(12),
+    selectedColor: CursedColor.primary,
+    padding: const EdgeInsets.all(12),
     checkmarkColor: Colors.white,
   );
 
@@ -16,8 +17,8 @@ class CursedChipTheme {
   static ChipThemeData darkTheme = ChipThemeData(
     disabledColor: Colors.grey.withOpacity(0.4),
     labelStyle: const TextStyle(color: Colors.black),
-    selectedColor: Colors.blue,
-    padding: EdgeInsets.all(12),
+    selectedColor: CursedColor.primary,
+    padding: const EdgeInsets.all(12),
     checkmarkColor: Colors.white,
   );
 }

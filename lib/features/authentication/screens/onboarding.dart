@@ -2,7 +2,6 @@ import 'package:cursedcart/features/authentication/controllers/onboarding_contro
 import 'package:cursedcart/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import '../../../utils/device/device_utility.dart';
 
@@ -17,7 +16,7 @@ class OnboardingScreen extends StatelessWidget {
         PageView(
           controller: controller.pageController,
           onPageChanged: controller.updatePageIndicator,
-          children: [
+          children: const [
             OnboardingPage(
               image: "assets/images/onboarding_screen/bat.png",
               title: "Welcome to CURSED CART",
@@ -35,9 +34,9 @@ class OnboardingScreen extends StatelessWidget {
             ),
           ],
         ),
-        SkipButton(),
-        PageIndicator(),
-        OnboardingNext(),
+        const SkipButton(),
+        const PageIndicator(),
+        const OnboardingNext(),
       ]),
     );
   }
@@ -55,15 +54,15 @@ class OnboardingNext extends StatelessWidget {
       right: 24,
       child: ElevatedButton(
         onPressed: () => OnboaringController.instance.nextPage(),
-        child: Icon(Icons.arrow_forward),
         style: ElevatedButton.styleFrom(shape: const CircleBorder()),
+        child: const Icon(Icons.arrow_forward),
       ),
     );
   }
 }
 
 class PageIndicator extends StatelessWidget {
-  PageIndicator({
+  const PageIndicator({
     super.key,
   });
   @override
@@ -124,7 +123,7 @@ class OnboardingPage extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineMedium,
             textAlign: TextAlign.center,
           ),
-          SizedBox(
+          const SizedBox(
             height: 4.0,
           ),
           Text(

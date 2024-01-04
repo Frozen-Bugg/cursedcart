@@ -1,4 +1,3 @@
-import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -46,6 +45,6 @@ class CursedeviceUtils {
   }
 
   static double getAppBarHeight() {
-    return MediaQuery.of(Get.context!).size.height;
+    return kToolbarHeight;
   }
 }

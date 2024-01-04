@@ -1,10 +1,8 @@
 import 'package:cursedcart/common/style/spacing_style.dart';
-import 'package:cursedcart/common/widget/success_screen.dart';
 import 'package:cursedcart/utils/device/device_utility.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 
 class ResetPasswordScreen extends StatelessWidget {
   const ResetPasswordScreen({super.key});

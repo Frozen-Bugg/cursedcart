@@ -1,13 +1,11 @@
 import 'package:cursedcart/common/style/spacing_style.dart';
-import 'package:cursedcart/common/widget/divider_line.dart';
+import 'package:cursedcart/common/widget/login_signup/divider_line.dart';
 import 'package:cursedcart/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:cursedcart/features/authentication/screens/signup/signup.dart';
-import 'package:cursedcart/utils/device/device_utility.dart';
-import 'package:cursedcart/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import '../../../common/widget/social_buttons.dart';
+import '../../../common/widget/login_signup/social_buttons.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});

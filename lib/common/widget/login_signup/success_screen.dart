@@ -1,9 +1,6 @@
 import 'package:cursedcart/common/style/spacing_style.dart';
-import 'package:cursedcart/features/authentication/screens/login.dart';
 import 'package:cursedcart/utils/device/device_utility.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class SuccessScreen extends StatelessWidget {
   const SuccessScreen(

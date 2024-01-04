@@ -1,10 +1,11 @@
+import 'package:cursedcart/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
 class CartCounterIcon extends StatelessWidget {
   const CartCounterIcon({
     super.key,
-    required this.iconcolor,
+    this.iconcolor = Colors.white,
     required this.onPressed,
   });
 
@@ -13,12 +14,13 @@ class CartCounterIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool isDark = CursedHelper.isDarkMode(context);
     return Stack(children: [
       IconButton(
           onPressed: onPressed,
           icon: Icon(
             Iconsax.shopping_bag,
-            color: iconcolor,
+            color: isDark ? Colors.white : Colors.black,
           )),
       Positioned(
         right: 0,

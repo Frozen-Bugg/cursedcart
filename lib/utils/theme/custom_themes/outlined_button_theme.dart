@@ -10,7 +10,7 @@ class CursedOutlinedButtonTheme {
       foregroundColor: Colors.black,
       side: const BorderSide(color: Colors.blue),
       padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
-      textStyle: TextStyle(
+      textStyle: const TextStyle(
           fontSize: 16, fontWeight: FontWeight.w600, color: Colors.black),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
     ),
@@ -23,7 +23,7 @@ class CursedOutlinedButtonTheme {
       foregroundColor: Colors.white,
       side: const BorderSide(color: Colors.blueAccent),
       padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
-      textStyle: TextStyle(
+      textStyle: const TextStyle(
           fontSize: 16, fontWeight: FontWeight.w600, color: Colors.white),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
     ),

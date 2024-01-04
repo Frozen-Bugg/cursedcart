@@ -34,11 +34,17 @@ class CursedVeritcalImageText extends StatelessWidget {
                               ? Colors.black
                               : Colors.white,
                           borderRadius: BorderRadius.circular(100)),
-                      child: Center(child: Text(image)),
+                      child: Center(
+                          child: ClipRRect(
+                        borderRadius: BorderRadius.circular(100),
+                        child: const Image(
+                          image: AssetImage('assets/images/impact.png'),
+                        ),
+                      )),
                     ),
                   ),
                 ),
-                SizedBox(height: 8),
+                const SizedBox(height: 8),
                 SizedBox(
                   width: 55,
                   child: Text(

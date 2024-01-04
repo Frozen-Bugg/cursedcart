@@ -1,5 +1,5 @@
-import 'package:cursedcart/common/widget/divider_line.dart';
-import 'package:cursedcart/common/widget/social_buttons.dart';
+import 'package:cursedcart/common/widget/login_signup/divider_line.dart';
+import 'package:cursedcart/common/widget/login_signup/social_buttons.dart';
 import 'package:cursedcart/features/authentication/screens/signup/verify_email.dart';
 import 'package:cursedcart/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';

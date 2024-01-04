@@ -1,5 +1,5 @@
 import 'package:cursedcart/common/style/spacing_style.dart';
-import 'package:cursedcart/common/widget/success_screen.dart';
+import 'package:cursedcart/common/widget/login_signup/success_screen.dart';
 import 'package:cursedcart/features/authentication/screens/login.dart';
 import 'package:cursedcart/utils/device/device_utility.dart';
 import 'package:flutter/cupertino.dart';

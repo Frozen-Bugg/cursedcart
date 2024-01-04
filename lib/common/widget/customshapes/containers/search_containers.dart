@@ -40,7 +40,7 @@ class CursedSearchContainer extends StatelessWidget {
                 icon,
                 color: Colors.grey.shade600,
               ),
-              SizedBox(width: 16),
+              const SizedBox(width: 16),
               Text(text, style: Theme.of(context).textTheme.bodySmall)
             ],
           ),

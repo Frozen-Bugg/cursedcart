@@ -1,5 +1,7 @@
-import 'package:cursedcart/features/authentication/screens/login.dart';
+import 'package:cursedcart/features/personalization/screens/settings/settings.dart';
 import 'package:cursedcart/features/shop/screens/home/home.dart';
+import 'package:cursedcart/features/shop/screens/store/store.dart';
+import 'package:cursedcart/features/shop/screens/wishlist/wishlist.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -7,11 +9,14 @@ import 'package:iconsax/iconsax.dart';
 class NavigationMenu extends StatelessWidget {
   final controller = Get.put(NavigationMenuController());
 
+  NavigationMenu({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: Obx(
         () => NavigationBar(
+            backgroundColor: Colors.transparent,
             selectedIndex: controller.selectedIndex.value,
             onDestinationSelected: (index) =>
                 controller.selectedIndex.value = index,
@@ -32,9 +37,9 @@ class NavigationMenuController extends GetxController {
   static NavigationMenuController get instance => Get.find();
   final Rx<int> selectedIndex = 0.obs;
   final screen = [
-    HomeScreen(),
-    Container(color: Colors.blue),
-    Container(color: Colors.green),
-    Container(color: Colors.red)
+    const HomeScreen(),
+    const StoreScreen(),
+    const CursedWishlist(),
+    const CursedSetting()
   ];
 }
